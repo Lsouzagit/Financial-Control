@@ -37,11 +37,13 @@
             this.btnIncome = new System.Windows.Forms.Button();
             this.btnWalletEvolution = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panelChildForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -126,6 +128,7 @@
             this.btnIncome.TabIndex = 2;
             this.btnIncome.Text = "Income";
             this.btnIncome.UseVisualStyleBackColor = true;
+            this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
             // 
             // btnWalletEvolution
             // 
@@ -149,14 +152,6 @@
             this.panel2.Size = new System.Drawing.Size(161, 100);
             this.panel2.TabIndex = 1;
             // 
-            // panelChildForm
-            // 
-            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(161, 0);
-            this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(847, 537);
-            this.panelChildForm.TabIndex = 1;
-            // 
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -167,6 +162,22 @@
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.Controls.Add(this.panel3);
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(161, 0);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(847, 537);
+            this.panelChildForm.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(235, 112);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 100);
+            this.panel3.TabIndex = 0;
             // 
             // formFinantialControl
             // 
@@ -180,6 +191,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            this.panelChildForm.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -196,6 +208,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

@@ -34,6 +34,7 @@ namespace Financial_Control
             childForm.Show();
         }
 
+        #region Main Buttons
         private void btnHelp_Click(object sender, EventArgs e)
         {
             openChildForm(new FormHelp());
@@ -43,5 +44,12 @@ namespace Financial_Control
         {
             openChildForm(new FormAbout());
         }
+
+        private void btnIncome_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormIncome());
+        }
+
+        #endregion
     }
 }
