@@ -16,5 +16,10 @@ namespace Financial_Control
         {
             InitializeComponent();
         }
+
+        private void FormIncome_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

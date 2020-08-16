@@ -63,6 +63,7 @@
             this.Controls.Add(this.panelDescription);
             this.Name = "FormIncome";
             this.Text = "FormIncome";
+            this.Load += new System.EventHandler(this.FormIncome_Load);
             this.panelDescription.ResumeLayout(false);
             this.panelDescription.PerformLayout();
             this.ResumeLayout(false);

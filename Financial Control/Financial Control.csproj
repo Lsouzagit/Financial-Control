@@ -48,6 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -61,6 +62,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="finantialcontroldbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finantialcontroldbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finantialcontroldbDataSet1.cs">
+      <DependentUpon>finantialcontroldbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finantialcontroldbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finantialcontroldbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finantialcontroldbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finantialcontroldbDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +110,12 @@
     <Compile Include="FormIncome.Designer.cs">
       <DependentUpon>FormIncome.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOverall.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +139,9 @@
     <EmbeddedResource Include="FormIncome.resx">
       <DependentUpon>FormIncome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormOverall.resx">
       <DependentUpon>FormOverall.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +154,39 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="finantialcontroldbDataSet.xsc">
+      <DependentUpon>finantialcontroldbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="finantialcontroldbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finantialcontroldbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finantialcontroldbDataSet.xss">
+      <DependentUpon>finantialcontroldbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="finantialcontroldbDataSet1.xsc">
+      <DependentUpon>finantialcontroldbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="finantialcontroldbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finantialcontroldbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finantialcontroldbDataSet1.xss">
+      <DependentUpon>finantialcontroldbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="finantialcontroldbDataSet2.xsc">
+      <DependentUpon>finantialcontroldbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="finantialcontroldbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finantialcontroldbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finantialcontroldbDataSet2.xss">
+      <DependentUpon>finantialcontroldbDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
